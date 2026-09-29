@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "合作协议义务提醒",
+  "source_context": "https://world.people.com.cn/n1/2026/0924/c1002-40804903.html",
+  "actors": [
+    "协议管理员",
+    "责任院校",
+    "核验人员"
+  ],
+  "states": [
+    "登记",
+    "调度",
+    "提醒",
+    "核验",
+    "结清"
+  ],
+  "invariants": [
+    "义务依赖",
+    "可注入时钟",
+    "独立核验",
+    "幂等提醒"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09303-012-A",
+      "actor": "协议管理员",
+      "state": "登记"
+    },
+    {
+      "case_id": "09303-012-B",
+      "actor": "核验人员",
+      "state": "调度"
+    }
+  ],
+  "tags": [
+    "agreement-obligation",
+    "deadline-scheduler"
+  ]
+}
